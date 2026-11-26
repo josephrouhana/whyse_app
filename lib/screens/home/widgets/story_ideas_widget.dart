@@ -304,7 +304,7 @@ class StoryIdeasEmptyState extends StatelessWidget {
             8.w.verticalSpace,
             AppText(
               text:
-                  "Story ideas will appear here once this topic has episodes ready to read.",
+                  "Story ideas will appear here once this topic has readings ready to read.",
               textAlign: TextAlign.center,
               style: AppTextStyles.medium(
                 fontSize: 14.sp,

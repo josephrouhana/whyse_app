@@ -24,7 +24,7 @@ class AchivementsFriendsTab extends StatelessWidget {
                 children: [
                   AppText(
                     text: gp.leaderboardError ??
-                        'No leaderboard data yet. Complete Sparks or Episodes to earn points.',
+                        'No leaderboard data yet. Complete Sparks or Readings to earn points.',
                     textAlign: TextAlign.center,
                     style: AppTextStyles.medium(
                       fontSize: 14.sp,
