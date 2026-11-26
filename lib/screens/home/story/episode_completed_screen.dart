@@ -97,8 +97,8 @@ class _EpisodeCompletedScreenState extends State<EpisodeCompletedScreen>
         : widget.progressPercent.clamp(0, 100);
     final progress = safePercent / 100.0;
     final episodeProgressText = totalEpisodes > 0
-        ? 'Episode $completedEpisodes of $totalEpisodes Completed'
-        : 'Episode ${widget.episodeNumber} Completed';
+        ? 'Reading $completedEpisodes of $totalEpisodes Completed'
+        : 'Reading ${widget.episodeNumber} Completed';
     final showPoints = widget.sparksPoints > 0;
 
     return AppLayout(
@@ -131,7 +131,7 @@ class _EpisodeCompletedScreenState extends State<EpisodeCompletedScreen>
                           8.h.verticalSpace,
                           AppText(
                             text:
-                                'Great job! You finished reading. Take the quiz to complete this episode.',
+                                'Great job! You finished reading. Take the quiz to complete this reading.',
                             style: AppTextStyles.medium(
                               fontSize: 14.sp,
                               color: AppColors.black.withValues(alpha: 0.55),
@@ -312,7 +312,7 @@ class _StoryCard extends StatelessWidget {
               ),
               4.h.verticalSpace,
               AppText(
-                text: 'Episode $episodeNumber',
+                text: 'Reading $episodeNumber',
                 style: AppTextStyles.medium(
                   fontSize: 13.sp,
                   color: AppColors.black.withValues(alpha: 0.5),
@@ -451,7 +451,7 @@ class _SeriesProgressCard extends StatelessWidget {
                 2.h.verticalSpace,
                 AppText(
                   text: totalEpisodes > 0
-                      ? '$completedEpisodes/$totalEpisodes Episodes · Keep Going!'
+                      ? '$completedEpisodes/$totalEpisodes Readings · Keep Going!'
                       : 'Keep Going!',
                   style: AppTextStyles.medium(
                     fontSize: 12.sp,

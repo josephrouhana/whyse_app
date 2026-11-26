@@ -75,7 +75,7 @@ class _SeriesCompletedScreenState extends State<SeriesCompletedScreen>
     if (completed < 0) completed = 0;
     final percent = total > 0 ? 100 : 0;
     final progressText = total > 0
-        ? '$completed/$total Episodes Completed!'
+        ? '$completed/$total Readings Completed!'
         : 'Series Completed!';
     final showPoints = widget.sparksPoints > 0;
 
@@ -261,7 +261,7 @@ class _SeriesCard extends StatelessWidget {
               ),
               4.h.verticalSpace,
               AppText(
-                text: '$episodeCount Episodes',
+                text: '$episodeCount Readings',
                 style: AppTextStyles.medium(
                   fontSize: 13.sp,
                   color: AppColors.black.withValues(alpha: 0.5),
